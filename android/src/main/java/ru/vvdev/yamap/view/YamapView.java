@@ -460,13 +460,13 @@ public class YamapView extends MapView implements UserLocationObjectListener, Ca
         } else if (child instanceof YamapMarker) {
             YamapMarker _child = (YamapMarker) child;
             PlacemarkMapObject obj = getMap().getMapObjects().addPlacemark(_child.point);
-            PlacemarkMapObject.setDraggable(true)
+            PlacemarkMapObject.setDraggable(true);
             _child.setMapObject(obj);
             childs.add(_child);
         } else if (child instanceof YamapCircle) {
             YamapCircle _child = (YamapCircle) child;
             CircleMapObject obj = getMap().getMapObjects().addCircle(_child.circle, 0, 0.f, 0);
-            obj.setDraggable(true)
+            obj.setDraggable(true);
             _child.setMapObject(obj);
             childs.add(_child);
         }
